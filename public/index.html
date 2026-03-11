@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VanshuBot</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <div class="app-container">
+        <!-- Left Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2><i class="fa-solid fa-robot"></i> VanshuBot</h2>
+            </div>
+            
+            <button class="new-chat-btn" id="newChatBtn">
+                <i class="fa-solid fa-plus"></i> New Chat
+            </button>
+            
+            <div class="chat-history">
+                <h3>Recent</h3>
+                <ul id="historyList">
+                    <!-- Dynamic chat history items will go here -->
+                </ul>
+            </div>
+            
+            <div class="sidebar-footer">
+                <button class="theme-toggle" id="themeToggleBtn">
+                    <i class="fa-solid fa-sun" id="themeIcon"></i> <span id="themeText">Light Mode</span>
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- Header for Mobile -->
+            <div class="mobile-header">
+                <button id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+                <h2>VanshuBot</h2>
+            </div>
+
+            <div class="chat-container" id="chatContainer">
+                <div class="welcome-screen" id="welcomeScreen">
+                    <div class="logo-wrapper">
+                        <i class="fa-solid fa-robot fa-3x"></i>
+                    </div>
+                    <h1>Hello, I am VanshuBot</h1>
+                    <p>How can I help you today?</p>
+                </div>
+            </div>
+
+            <!-- Input Box Section -->
+            <div class="input-container">
+                <div class="input-box">
+                    <textarea id="userInput" placeholder="Ask VanshuBot a question..." rows="1"></textarea>
+                    <button id="sendBtn" class="send-btn" disabled>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="footer-text">
+                    VanshuBot can make mistakes. Consider verifying important information.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/genai": "https://esm.run/@google/genai"
+          }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
