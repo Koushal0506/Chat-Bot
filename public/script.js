@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize Gemini API
     // Replace "YOUR_API_KEY_HERE" with your actual Gemini API key
-    ai = new GoogleGenAI({ apiKey: "AIzaSyAy5mG8Lhp9w4EOtNiWZIkpQuPWKsXOBUA" });
+    ai = new GoogleGenAI({ apiKey: "AIzaSyAwueB1D4jSXRjyZjyKRwscAEkJmXUdVAA" });
 
     // Theme Toggle Logic
     themeToggleBtn.addEventListener('click', () => {
